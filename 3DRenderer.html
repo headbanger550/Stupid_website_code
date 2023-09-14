@@ -1,19 +1,14 @@
-<script>
+<canvas id="game" style="border:1px solid black;" width="800" height="600">
 
-i = 0;
+    <script>
 
-while(i < 100)
-{   
-    if(i == 15)
-    {
-        document.write(i + ". <strong>TBH</strong><br>");
-    }
-    else
-    {
-        document.write(i + ". TBH<br>");
-    }
-    
-    i++;
-}
+        var canvas = document.getElementById("game");
+        var ctx = canvas.getContext("2d");
 
-</script>
+        ctx.fillStyle = "#8f018a";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.fillStyle = "#696";
+        ctx.fillRect(100, 100, 100, 100);
+
+    </script>
